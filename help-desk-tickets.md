@@ -6,7 +6,7 @@ This document records incidents completed as part of a guided learning simulatio
 
 - [x] Ticket 001: Locked DentalRecord account
 - [x] Ticket 002: Workstation Print Queue Failure
-- [ ] Ticket 003
+- [x] Ticket 003: VPN Failure After Windows Update
 - [ ] Ticket 004
 - [ ] Ticket 005
 
@@ -99,3 +99,59 @@ The ticket was not escalated because the printer remained available to other emp
 ### Escalation Decision
 
 The incident was not escalated because it fell within Tier 1 authority, the requester's identity was verified, no suspicious activity was present, and the standard account-unlock procedure resolved the problem.
+
+
+---
+
+## Ticket 003: VPN Failure After Windows Update
+
+| Field | Details |
+| --- | --- |
+| Ticket ID | PWH-INC-003 |
+| Requester | Ashley Brown, Practice Administration |
+| Category | Network and Remote Access |
+| Priority | P2 - High |
+| Status | Resolved |
+| Escalated | Yes - Tier 2 Network Support |
+
+### Issue Description
+
+Ashley reported being unable to establish a secure VPN connection while working remotely. General internet access and Microsoft Outlook continued working. The VPN had worked the previous day, but Ashley's clinic laptop installed a Windows update overnight.
+
+### Business Impact
+
+Ashley could not access internal clinic resources needed for a time-sensitive business deadline. No approved alternative method of accessing or transferring the files was available.
+
+### Troubleshooting Performed
+
+1. Confirmed that Ashley had general internet access.
+2. Recorded the exact VPN error: "A secure connection could not be established."
+3. Checked for a wider VPN outage and confirmed that the VPN service was operational.
+4. Confirmed that Ashley's account was active and not locked.
+5. Restarted the VPN application.
+6. Restarted the clinic laptop.
+7. Verified that Ashley selected the approved VPN profile.
+8. Confirmed that the VPN client was current.
+9. Retried the connection and received the same error.
+10. Collected the permitted VPN diagnostic logs.
+11. Escalated the incident to Tier 2 Network Support with the error, business impact, recent update, logs, and completed troubleshooting steps.
+
+### Tier 2 Action
+
+Tier 2 determined that the Windows update had disrupted the VPN's virtual network-adapter component. The technician, Cam Bethea, repaired the approved component and restored the VPN connection.
+
+### Resolution
+
+Ashley successfully connected to the VPN and accessed the required internal clinic resources.
+
+### Closure Note
+
+Ashley confirmed that normal access was restored. Tier 1 documented the troubleshooting, escalation, Tier 2 repair, and user confirmation before closing the ticket.
+
+### Escalation Decision
+
+The incident required escalation because authorized Tier 1 troubleshooting did not resolve the failure and repair of the VPN network component required Tier 2 access and expertise.
+
+### Priority Decision
+
+This incident was classified P2 - High because essential, time-sensitive work was blocked, no approved workaround was available, and specialized support was required. It was not P1 because the VPN service remained available to other employees and the clinic was not experiencing a widespread outage.
