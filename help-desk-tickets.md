@@ -15,7 +15,7 @@ This document records incidents completed as part of a guided learning simulatio
 | Field | Details |
 | --- | --- |
 | Ticket ID | PWH-INC-001 |
-| Requester | Jordan Lee, Front Desk |
+| Requester | Jessi Smith, Front Desk |
 | Category | Identity and Access Management |
 | Priority | P3 - Medium |
 | Status | Resolved |
