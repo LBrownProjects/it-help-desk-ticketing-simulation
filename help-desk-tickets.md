@@ -5,7 +5,7 @@ This document records incidents completed as part of a guided learning simulatio
 ## Progress
 
 - [x] Ticket 001: Locked DentalRecord account
-- [ ] Ticket 002
+- [x] Ticket 002: Workstation Print Queue Failure
 - [ ] Ticket 003
 - [ ] Ticket 004
 - [ ] Ticket 005
@@ -49,6 +49,52 @@ Jessi's existing account was unlocked. Jessi successfully signed in with the cor
 ### Closure Note
 
 The resolution was documented, the requester confirmed that service was restored, and the ticket was closed.
+
+
+## Ticket 002: Workstation Print Queue Failure
+
+| Field | Details |
+| --- | --- |
+| Ticket ID | PWH-INC-002 |
+| Requester | Jasmine Jefferson, Billing |
+| Category | Hardware and Printing |
+| Priority | P3 - Medium |
+| Status | Resolved |
+| Escalated | No |
+
+### Issue Description
+
+Jasmine reported that the billing printer appeared offline. She submitted two documents, but neither printed. The documents were required for the day's billing work.
+
+### Business Impact
+
+One billing employee was unable to print from her workstation. Other employees could continue printing, and an alternate workstation or printer was available. The issue created a same-day work delay but did not stop clinic operations. Because the impact was limited but the work had same-day urgency, the ticket was assigned P3 - Medium priority.
+
+### Troubleshooting Performed
+
+1. Asked whether other billing employees could print to determine the scope of the incident.
+2. Confirmed that two coworkers could print successfully.
+3. Determined that the printer had power, was connected to the network, and was available to other users.
+4. Verified that Jasmine selected the correct network printer.
+5. Inspected Jasmine's print queue and found two jobs with the status "Error - Printing."
+6. Canceled the stalled print jobs.
+7. Restarted the Windows Print Spooler service using the approved procedure.
+8. Printed an approved, non-sensitive test page.
+9. Asked Jasmine to resubmit one billing document.
+10. Confirmed that the billing document printed successfully.
+
+### Resolution
+
+Two stalled jobs were removed from Jasmine's print queue, and the Windows Print Spooler service was restarted. The test page and Jasmine's billing document printed successfully.
+
+### Closure Note
+
+Jasmine confirmed that normal printing was restored. She was reminded to retrieve sensitive documents promptly. The troubleshooting steps and resolution were documented, and the ticket was closed.
+
+### Escalation Decision
+
+The ticket was not escalated because the printer remained available to other employees and routine Tier 1 troubleshooting resolved the workstation-specific problem.
+
 
 ### Escalation Decision
 
