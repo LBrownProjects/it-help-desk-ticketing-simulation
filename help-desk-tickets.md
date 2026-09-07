@@ -155,3 +155,64 @@ The incident required escalation because authorized Tier 1 troubleshooting did n
 ### Priority Decision
 
 This incident was classified P2 - High because essential, time-sensitive work was blocked, no approved workaround was available, and specialized support was required. It was not P1 because the VPN service remained available to other employees and the clinic was not experiencing a widespread outage.
+
+
+---
+
+## Ticket 004: Credential-Phishing Incident
+
+| Field | Details |
+| --- | --- |
+| Ticket ID | PWH-SEC-004 |
+| Requester | Nisha Phillips, Medical Assistant |
+| Category | Information Security |
+| Priority | P1 - Critical |
+| Status | Resolved |
+| Escalated | Yes - Information Security |
+| Assigned analyst | Mason Israel, Information Security Analyst |
+
+### Issue Description
+
+Nina received an email that appeared to come from Microsoft. It warned that her clinic account would be disabled unless she verified it immediately. Nina selected the link and entered her clinic email address and password. She denied the unexpected MFA request, closed the website, and contacted the help desk.
+
+### Business and Security Impact
+
+Nina's password was exposed to a malicious website. The attacker attempted to complete the sign-in using MFA, and similar messages were present in other clinic mailboxes. The incident created a risk of unauthorized access to clinic systems and protected information.
+
+### Initial Response
+
+1. Instructed Nina not to interact further with the email or website.
+2. Asked whether she entered credentials, approved MFA, downloaded a file, or opened an attachment.
+3. Confirmed that Nina entered her email address and password.
+4. Confirmed that she denied the MFA prompt.
+5. Confirmed that she did not download a file or open an attachment.
+6. Preserved the original email using the clinic's approved reporting procedure.
+7. Immediately escalated the incident to Information Security.
+8. Initiated the clinic's approved compromised-account response process.
+
+### Information Security Response
+
+Morgan Reed, Information Security Analyst:
+
+1. Directed the approved password-reset process.
+2. Revoked Nina's existing account sessions.
+3. Reviewed recent sign-in activity.
+4. Confirmed that no unauthorized sign-in succeeded.
+5. Blocked the malicious sender and website.
+6. Removed matching phishing emails from other clinic mailboxes.
+
+### Resolution
+
+Nina created a new password through the clinic's official process and successfully signed in using the new password and MFA. Information Security confirmed that the attempted compromise was contained.
+
+### Closure Note
+
+Nina confirmed normal account access. The security team's findings and containment actions were documented according to clinic policy. Nina received guidance about suspicious urgency, credential requests, unexpected MFA prompts, and approved phishing-reporting procedures.
+
+### Escalation Decision
+
+The incident was escalated immediately because exposed credentials, an unauthorized MFA attempt, and similar messages in other mailboxes required security tools and authority beyond Tier 1.
+
+### Priority Decision
+
+The incident was assigned P1 - Critical because it presented a potentially widespread security threat and risk of unauthorized access to protected clinic information. Immediate containment was required even though the MFA denial prevented a successful sign-in.
