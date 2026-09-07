@@ -7,7 +7,7 @@ This document records incidents completed as part of a guided learning simulatio
 - [x] Ticket 001: Locked DentalRecord account
 - [x] Ticket 002: Workstation Print Queue Failure
 - [x] Ticket 003: VPN Failure After Windows Update
-- [ ] Ticket 004
+- [x] Ticket 004: Credential-Phishing Incident
 - [ ] Ticket 005
 
 ## Ticket 001: Locked DentalRecord Account
@@ -173,17 +173,17 @@ This incident was classified P2 - High because essential, time-sensitive work wa
 
 ### Issue Description
 
-Nina received an email that appeared to come from Microsoft. It warned that her clinic account would be disabled unless she verified it immediately. Nina selected the link and entered her clinic email address and password. She denied the unexpected MFA request, closed the website, and contacted the help desk.
+Nisha received an email that appeared to come from Microsoft. It warned that her clinic account would be disabled unless she verified it immediately. Nisha selected the link and entered her clinic email address and password. She denied the unexpected MFA request, closed the website, and contacted the help desk.
 
 ### Business and Security Impact
 
-Nina's password was exposed to a malicious website. The attacker attempted to complete the sign-in using MFA, and similar messages were present in other clinic mailboxes. The incident created a risk of unauthorized access to clinic systems and protected information.
+Nisha's password was exposed to a malicious website. The attacker attempted to complete the sign-in using MFA, and similar messages were present in other clinic mailboxes. The incident created a risk of unauthorized access to clinic systems and protected information.
 
 ### Initial Response
 
-1. Instructed Nina not to interact further with the email or website.
+1. Instructed Nisha not to interact further with the email or website.
 2. Asked whether she entered credentials, approved MFA, downloaded a file, or opened an attachment.
-3. Confirmed that Nina entered her email address and password.
+3. Confirmed that Nisha entered her email address and password.
 4. Confirmed that she denied the MFA prompt.
 5. Confirmed that she did not download a file or open an attachment.
 6. Preserved the original email using the clinic's approved reporting procedure.
@@ -192,10 +192,10 @@ Nina's password was exposed to a malicious website. The attacker attempted to co
 
 ### Information Security Response
 
-Morgan Reed, Information Security Analyst:
+Mason Israel, Information Security Analyst:
 
 1. Directed the approved password-reset process.
-2. Revoked Nina's existing account sessions.
+2. Revoked Nisha's existing account sessions.
 3. Reviewed recent sign-in activity.
 4. Confirmed that no unauthorized sign-in succeeded.
 5. Blocked the malicious sender and website.
@@ -203,11 +203,11 @@ Morgan Reed, Information Security Analyst:
 
 ### Resolution
 
-Nina created a new password through the clinic's official process and successfully signed in using the new password and MFA. Information Security confirmed that the attempted compromise was contained.
+Nisha created a new password through the clinic's official process and successfully signed in using the new password and MFA. Information Security confirmed that the attempted compromise was contained.
 
 ### Closure Note
 
-Nina confirmed normal account access. The security team's findings and containment actions were documented according to clinic policy. Nina received guidance about suspicious urgency, credential requests, unexpected MFA prompts, and approved phishing-reporting procedures.
+Nisha confirmed normal account access. The security team's findings and containment actions were documented according to clinic policy. Nisha received guidance about suspicious urgency, credential requests, unexpected MFA prompts, and approved phishing-reporting procedures.
 
 ### Escalation Decision
 
