@@ -8,7 +8,7 @@ This document records incidents completed as part of a guided learning simulatio
 - [x] Ticket 002: Workstation Print Queue Failure
 - [x] Ticket 003: VPN Failure After Windows Update
 - [x] Ticket 004: Credential-Phishing Incident
-- [ ] Ticket 005
+- [x] Ticket 005: OneDrive File Sync Failure
 
 ## Ticket 001: Locked DentalRecord Account
 
@@ -101,8 +101,6 @@ The ticket was not escalated because the printer remained available to other emp
 The incident was not escalated because it fell within Tier 1 authority, the requester's identity was verified, no suspicious activity was present, and the standard account-unlock procedure resolved the problem.
 
 
----
-
 ## Ticket 003: VPN Failure After Windows Update
 
 | Field | Details |
@@ -157,7 +155,6 @@ The incident required escalation because authorized Tier 1 troubleshooting did n
 This incident was classified P2 - High because essential, time-sensitive work was blocked, no approved workaround was available, and specialized support was required. It was not P1 because the VPN service remained available to other employees and the clinic was not experiencing a widespread outage.
 
 
----
 
 ## Ticket 004: Credential-Phishing Incident
 
@@ -216,3 +213,49 @@ The incident was escalated immediately because exposed credentials, an unauthori
 ### Priority Decision
 
 The incident was assigned P1 - Critical because it presented a potentially widespread security threat and risk of unauthorized access to protected clinic information. Immediate containment was required even though the MFA denial prevented a successful sign-in.
+
+## Ticket 005: OneDrive File Sync Failure
+
+**Ticket ID:** PWH-INC-005 
+**Requester:** Danielle Brooks 
+**Department:** Billing 
+**Category:** Software / Microsoft 365 / OneDrive 
+**Priority:** P3 
+**Status:** Resolved 
+**Escalated:** No 
+
+### Issue Description
+
+Danielle reported that the file `Daily Billing: Reconciliation?.xlsx` was not syncing through Microsoft OneDrive. A red X appeared beside the file, preventing her from accessing the current version from the shared workstation.
+
+### Business Impact
+
+The issue affected one employee and delayed Danielle's ability to complete the daily billing reconciliation. No data was lost, and the clinic remained operational.
+
+### Troubleshooting Performed
+
+1. Confirmed that Danielle was signed in to the correct Microsoft 365 account.
+2. Identified the affected file in the OneDrive folder.
+3. Reviewed the OneDrive sync-status message.
+4. Determined that the colon and question mark in the filename were unsupported characters.
+5. Renamed the file to `Daily Billing Reconciliation.xlsx`.
+6. Allowed OneDrive to resume syncing.
+7. Confirmed that the red X disappeared.
+8. Asked Danielle to open the file from the synced location and verify its contents.
+9. Danielle confirmed that the file opened successfully and contained the current billing information.
+
+### Resolution
+
+Removed the unsupported characters from the filename. OneDrive successfully synced the renamed file, and Danielle regained access to the current version from the shared workstation.
+
+### Closure Note
+
+Danielle confirmed that she could open the current version of `Daily Billing Reconciliation.xlsx`. No additional problems were reported. The ticket was resolved and closed.
+
+### Priority Decision
+
+The ticket was assigned **P3 priority** because the issue affected one employee and one file. Work was temporarily delayed, but there was no data loss or organization-wide outage.
+
+### Escalation Decision
+
+The ticket was not escalated. Tier 1 identified the cause, completed the corrective action within its authority, and confirmed the resolution with the requester.
